@@ -68,9 +68,9 @@
 <section class="about">
   <h2 data-en="👋 Meet Teacher Maria" data-zh="👋 認識 Teacher Maria" data-ar="👋 تعرّف على المعلمة ماريا">👋 Meet Teacher Maria</h2>
   <img src="Teacher-Maria.jpeg" alt="Teacher Maria">
-  <p data-en="Hi! I’m Teacher Maria from the Philippines, a friendly online English teacher with 1 year of experience teaching young learners. I’m TESOL and TEFL certified and hold a Bachelor’s degree in Criminology. I create fun, interactive lessons that help kids build confidence, improve pronunciation, and enjoy learning English. All classes are held online using the VOOV Meeting app for Chinese students and Zoom for Middle East students, with engaging activities and visual materials to support your child’s growth. 🌟💛"
+  <p id="about-text" data-en="Hi! I’m Teacher Maria from the Philippines, a friendly online English teacher with 1 year of experience teaching young learners. I’m TESOL and TEFL certified and hold a Bachelor’s degree in Criminology. I create fun, interactive lessons that help kids build confidence, improve pronunciation, and enjoy learning English. All classes are held online using the VOOV Meeting app for Chinese students and Zoom for Middle East students, with engaging activities and visual materials to support your child’s growth. 🌟💛"
      data-zh="嗨！我是來自菲律賓的 Teacher Maria，一位有一年教授幼兒經驗的友善線上英語老師。我擁有 TESOL 和 TEFL 認證，並持有犯罪學學士學位。我設計有趣、互動的課程，幫助孩子建立自信、改善發音並享受學習英語。所有課程均通過 VOOV（中國學生）和 Zoom（中東學生）線上進行，並提供互動和視覺教材以支持孩子的成長。🌟💛"
-     data-ar="مرحبًا! أنا المعلمة ماريا من الفلبين، معلمة لغة إنجليزية ودودة عبر الإنترنت ولدي سنة من الخبرة في تعليم الأطفال الصغار. أنا حاصلة على شهادتي TESOL وTEFL وحاصلة على درجة البكالوريوس في علم الجريمة. أصمم دروسًا ممتعة وتفاعلية تساعد الأطفال على بناء الثقة، تحسين النطق والاستمتاع بتعلم اللغة الإنجليزية. جميع الدروس تتم عبر تطبيق VOOV للطلاب الصينيين وZoom للطلاب في الشرق الأوسط، مع أنشطة مرئية وممتعة لدعم نمو طفلك. 🌟💛"></p>
+     data-ar="مرحبًا! أنا المعلمة ماريا من الفلبين، معلمة لغة إنجليزية ودودة عبر الإنترنت ولدي سنة من الخبرة في تعليم الأطفال الصغار. أنا حاصلة على شهادتي TESOL وTEFL وحاصلة على درجة البكالوريوس في علم الجريمة. أصمم دروسًا ممتعة وتفاعلية تساعد الأطفال على بناء الثقة، تحسين النطق والاستمتاع بتعلم اللغة الإنجليزية. جميع الدروس تتم عبر تطبيق VOOV للطلاب الصينيين وZoom للطلاب في الشرق الأوسط، مع أنشطة مرئية وممتعة لدعم نمو طفلك. 🌟💛">Hi! I’m Teacher Maria from the Philippines, a friendly online English teacher with 1 year of experience teaching young learners. I’m TESOL and TEFL certified and hold a Bachelor’s degree in Criminology. I create fun, interactive lessons that help kids build confidence, improve pronunciation, and enjoy learning English. All classes are held online using the VOOV Meeting app for Chinese students and Zoom for Middle East students, with engaging activities and visual materials to support your child’s growth. 🌟💛</p>
 </section>
 
 <!-- Achievements -->
@@ -141,11 +141,11 @@ function toggleLang() {
   const elements = document.querySelectorAll('[data-en]');
   const body = document.body;
   elements.forEach(el => {
-    if(el.innerText === el.dataset.en) {
+    if(el.innerText === el.dataset.en){
       el.innerText = el.dataset.zh || el.dataset.en;
       body.style.direction = "ltr";
       body.style.textAlign = "left";
-    } else if(el.innerText === el.dataset.zh) {
+    } else if(el.innerText === el.dataset.zh){
       el.innerText = el.dataset.ar || el.dataset.en;
       body.style.direction = "rtl";
       body.style.textAlign = "right";
@@ -160,4 +160,3 @@ function toggleLang() {
 
 </body>
 </html>
-VvV
