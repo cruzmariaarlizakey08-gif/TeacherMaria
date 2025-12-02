@@ -5,213 +5,217 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Teacher Maria – Online English Teacher for Kids | TESOL & TEFL Certified | Fun Lessons via VOOV & Zoom">
 <title>Learn English with Teacher Maria 🎉</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
-body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #ffe4e1; color: #333; text-align: center; }
-header { background-color: #ffb6c1; padding: 50px 20px; text-align: center; position: relative; }
-header h1 { font-size: 2.5rem; margin: 0 0 10px; }
-header p { font-size: 1.2rem; margin: 0 0 20px; }
-.btn { background-color: #ff69b4; color: white; padding: 12px 25px; text-decoration: none; border-radius: 10px; font-weight: bold; margin: 5px; display: inline-block; transition: transform 0.2s, background-color 0.2s; }
-.btn:hover { transform: scale(1.1); background-color: #ff1493; }
-section { padding: 50px 20px; max-width: 900px; margin: auto; }
-.about img { max-width: 200px; border-radius: 50%; border: 5px solid #ff69b4; display: block; margin: 0 auto 30px; }
-.about p { text-align: center; max-width: 700px; margin: 0 auto; line-height: 1.6; font-size: 1rem; background-color:#ffe0eb; padding:25px; border-radius:15px; }
-.achievements img { max-width: 400px; display: block; margin: 20px auto; border-radius: 10px; }
-.why-choose { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px; }
-.why-card { background-color: #fff0f5; padding: 15px; border-radius: 15px; text-align: center; flex: 1 1 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.2s; min-height: 220px; max-width: 280px; display: flex; flex-direction: column; justify-content: center; }
-.why-card:hover { transform: translateY(-5px); }
-.why-card img { max-width: 60px; margin-bottom: 15px; transition: transform 0.3s ease; }
-.why-card:hover img { transform: scale(1.2) translateY(-5px); }
-.why-card h3 { color: #ff1493; margin: 10px 0; font-size: 1.1rem; }
-.why-card p { flex-grow: 1; font-size: 0.95rem; }
-.pricing { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px; }
-.pricing-card { background-color: #fff0f5; padding: 20px; border-radius: 15px; text-align: center; flex: 1 1 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.2s; }
-.pricing-card:hover { transform: translateY(-5px); }
-.pricing-card h3 { margin-top: 0; color: #ff1493; }
-.pricing-card .discount { color: green; font-weight: bold; margin-top: 10px; }
-.schedule-box img { max-width: 100%; border-radius: 15px; border: 2px solid pink; margin-bottom:50px; }
-.qr-code { max-width: 180px; display: block; margin: 20px auto; border-radius: 10px; }
-footer { text-align: center; padding: 20px; background-color: #ffb6c1; color: white; margin-top: 50px; }
-.side-img { position: fixed; width: 100px; z-index: 1; animation: float 6s ease-in-out infinite alternate; }
-.left { left: 0; }
-.right { right: 0; }
-.img1 { top: 150px; }
-.img2 { top: 330px; }
-.img3 { top: 520px; }
-@keyframes float { 0% { transform: translate(0,0); } 25% { transform: translate(10px,-10px); } 50% { transform: translate(-10px,10px); } 75% { transform: translate(10px,10px); } 100% { transform: translate(0,0); } }
-
-/* removed airplane */
-
-@media (max-width: 600px) {
-  header { padding: 30px 10px; }
-  .about img { max-width: 150px; }
-  .about p { padding:15px; }
-  .achievements img { max-width: 90%; }
-  .qr-code { max-width: 150px; }
-  .why-card img { max-width: 50px; }
-  .why-card { min-height: auto; max-width: 100%; }
+body {
+ font-family: 'Poppins', sans-serif;
+ margin: 0; padding: 0;
+ background: #f7f7ff;
+ color: #333;
 }
 
-.lang-toggle {
-  position: fixed; top: 20px; right: 20px;
-  background: #ff69b4; color: white; border: none;
-  padding: 10px 15px; border-radius: 10px;
-  cursor: pointer; z-index: 1000;
+/* Header */
+header {
+ background: #6a5acd;
+ color: white;
+ padding: 40px 20px;
+ text-align: center;
 }
 
-#payment ul {
-    list-style-type: none !important;
-    padding-left: 0 !important;
-    margin: 0 !important;
-    text-align: left;
+header h1 { margin: 0; font-size: 2.3rem; }
+header p { margin-top: 5px; }
+
+/* Language Toggle */
+.language-toggle {
+ margin-top: 15px;
 }
-#payment li { margin-bottom: 10px; }
+.language-toggle button {
+ padding: 8px 15px;
+ margin: 3px;
+ border: none;
+ background: white;
+ color: #6a5acd;
+ border-radius: 5px;
+ cursor: pointer;
+ font-weight: 600;
+}
+
+/* About Section */
+.about {
+ padding: 40px 20px;
+ text-align: center;
+}
+
+.about img {
+ width: 180px;
+ border-radius: 50%;
+ margin-bottom: 20px;
+}
+
+.about p {
+ max-width: 600px;
+ margin: auto;
+ line-height: 1.7;
+}
+
+/* Achievements */
+.achievements {
+ background: white;
+ padding: 40px 20px;
+ text-align: center;
+}
+
+.achievements img {
+ width: 280px;
+ margin: 10px;
+ border-radius: 10px;
+}
+
+/* Pricing */
+.pricing {
+ padding: 40px 20px;
+ background: #ecebff;
+ text-align: center;
+}
+
+.price-box {
+ background: white;
+ padding: 20px;
+ margin: 10px auto;
+ width: 300px;
+ border-radius: 15px;
+ box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.price-box h3 {
+ margin: 0;
+}
+
+.price-box p {
+ font-size: 1.2rem;
+ font-weight: bold;
+ color: #6a5acd;
+}
+
+/* Contact */
+.contact {
+ padding: 40px 20px;
+ text-align: center;
+}
+
+.contact a {
+ color: #6a5acd;
+ font-weight: 600;
+ text-decoration: none;
+}
+
+footer {
+ background: #6a5acd;
+ color: white;
+ text-align: center;
+ padding: 15px;
+ margin-top: 40px;
+}
 </style>
-</head>
 
+</head>
 <body>
 
-<button class="lang-toggle" onclick="toggleLanguage()">🌐 Language</button>
-
 <header>
-  <h1 class="translatable" data-en="🎈 Learn English the Fun Way with Teacher Maria! 🎈" data-zh="🎈 与玛丽亚老师一起快乐学英语！🎈" data-ar="🎈 تعلم الإنجليزية بطريقة ممتعة مع المعلمة ماريا! 🎈">🎈 Learn English the Fun Way with Teacher Maria! 🎈</h1>
-  <p class="translatable" data-en="Interactive online lessons for kids 🧒. Start your English adventure today! 🚀" data-zh="为孩子提供互动在线课程 🧒。立即开始英语冒险吧！🚀" data-ar="دروس تفاعلية عبر الإنترنت للأطفال 🧒. ابدأ مغامرة تعلم الإنجليزية اليوم! 🚀">Interactive online lessons for kids 🧒. Start your English adventure today! 🚀</p>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn translatable" data-en="🎁 Book Trial Class" data-zh="🎁 预约试课" data-ar="🎁 احجز درس تجريبي">🎁 Book Trial Class</a>
-  <a href="#" id="regularBtn" class="btn translatable" data-en="💖 Subscribe Now" data-zh="💖 立即订阅" data-ar="💖 اشترك الآن">💖 Subscribe Now</a>
+ <h1 class="translatable" 
+     data-en="Learn English with Teacher Maria"
+     data-zh="跟玛丽亚老师一起学英语"
+     data-ar="تعلم الإنجليزية مع المعلمة ماريا">
+     Learn English with Teacher Maria
+ </h1>
+
+ <p class="translatable"
+     data-en="Fun, interactive, and confidence-building English classes for kids!"
+     data-zh="有趣、互动、自信提升的儿童英语课程！"
+     data-ar="دروس إنجليزي ممتعة وتفاعلية للأطفال!">
+     Fun, interactive, and confidence-building English classes for kids!
+ </p>
+
+ <div class="language-toggle">
+  <button onclick="setLanguage('en')">English</button>
+  <button onclick="setLanguage('zh')">中文</button>
+  <button onclick="setLanguage('ar')">العربية</button>
+ </div>
 </header>
 
-<img src="pencil.png" class="side-img left img1">
-<img src="crayons.png" class="side-img left img2">
-<img src="books.png" class="side-img left img3">
-<img src="crayons.png" class="side-img right img1">
-<img src="books.png" class="side-img right img2">
-<img src="pencil.png" class="side-img right img3">
-
+<!-- ABOUT ME -->
 <section class="about">
-  <h2 class="translatable" data-en="👋 Meet Teacher Maria" data-zh="👋 认识玛丽亚老师" data-ar="👋 تعرف على المعلمة ماريا">👋 Meet Teacher Maria</h2>
-  <img src="Teacher-Maria.jpeg" alt="Teacher Maria">
-  <p class="translatable"
-  data-en="Hi! I’m Teacher Maria from the Philippines, a friendly online English teacher with 1 year of experience teaching young learners. I’m TESOL and TEFL certified and hold a Bachelor’s degree in Criminology. I create fun, interactive lessons that help kids build confidence, improve pronunciation, and enjoy learning English. All classes are held online using the VOOV Meeting app for Chinese students and Zoom for Middle East students, with engaging activities and visual materials to support your child’s growth. 🌟💛"
-  data-zh="大家好！我是来自菲律宾的玛丽亚老师，一位有1年幼儿在线英语教学经验的友好老师。我拥有TESOL和TEFL认证以及犯罪学学士学位。我设计有趣的互动课程，帮助孩子建立信心、改善发音并享受学习英语。所有课程为在线课程，针对中国学生使用VOOV会议应用，针对中东学生使用Zoom，配有丰富的互动活动和视觉教材支持孩子成长。🌟💛"
-  data-ar="مرحبًا! أنا المعلمة ماريا من الفلبين، معلمة لغة إنجليزية ودودة عبر الإنترنت ولدي سنة خبرة في تعليم الأطفال الصغار. أنا حاصلة على شهادات TESOL وTEFL وأحمل درجة البكالوريوس في علم الإجرام. أقوم بإنشاء دروس ممتعة وتفاعلية تساعد الأطفال على بناء الثقة، وتحسين النطق، والاستمتاع بتعلم اللغة الإنجليزية. تُعقد جميع الدروس عبر الإنترنت باستخدام تطبيق VOOV للطلاب الصينيين وZoom للطلاب في الشرق الأوسط، مع أنشطة تفاعلية ومواد بصرية لدعم نمو طفلك. 🌟💛">
-  Hi! I’m Teacher Maria from the Philippines...
-  </p>
+ <h2 class="translatable"
+     data-en="👋 Meet Teacher Maria"
+     data-zh="👋 认识玛丽亚老师"
+     data-ar="👋 تعرف على المعلمة ماريا">
+     👋 Meet Teacher Maria
+ </h2>
+
+ <img src="Teacher-Maria.jpeg" alt="Teacher Maria">
+
+ <p class="translatable"
+ data-en="Hi! I’m Teacher Maria from the Philippines, a friendly online English teacher with 1 year of experience teaching young learners. I’m TESOL and TEFL certified and hold a Bachelor’s degree in Criminology. I create fun, interactive lessons that help kids build confidence, improve pronunciation, and enjoy learning English. All classes are held online using the VOOV Meeting app for Chinese students and Zoom for Middle East students, with engaging activities and visual materials to support your child’s growth. 🌟💛"
+ data-zh="大家好！我是来自菲律宾的玛丽亚老师，一位有1年幼儿在线英语教学经验的友好老师。我拥有TESOL和TEFL认证以及犯罪学学士学位。我设计有趣的互动课程，帮助孩子建立信心、改善发音并享受学习英语。所有课程为在线课程，针对中国学生使用VOOV会议应用，针对中东学生使用Zoom，配有丰富的互动活动和视觉教材支持孩子成长。🌟💛"
+ data-ar="مرحبًا! أنا المعلمة ماريا من الفلبين، معلمة لغة إنجليزية ودودة عبر الإنترنت ولدي سنة خبرة في تعليم الأطفال الصغار. أنا حاصلة على شهادات TESOL وTEFL وأحمل درجة البكالوريوس في علم الإجرام. أقوم بإنشاء دروس ممتعة وتفاعلية تساعد الأطفال على بناء الثقة، وتحسين النطق، والاستمتاع بتعلم اللغة الإنجليزية. تُعقد جميع الدروس باستخدام VOOV للطلاب الصينيين وZoom للطلاب في الشرق الأوسط، مع أنشطة تفاعلية ومواد بصرية لدعم نمو طفلك. 🌟💛">
+ </p>
 </section>
 
+<!-- ACHIEVEMENTS -->
 <section class="achievements">
-  <h2 class="translatable" data-en="🏆 My Achievements" data-zh="🏆 我的成就" data-ar="🏆 إنجازاتي">🏆 My Achievements</h2>
-  <img src="achievement.png" alt="Achievements">
+ <h2 class="translatable"
+     data-en="🏆 My Achievements"
+     data-zh="🏆 我的成就"
+     data-ar="🏆 إنجازاتي">
+     🏆 My Achievements
+ </h2>
+
+ <img src="achievement.png" alt="TESOL Certificate">
+ <img src="tesol.png" alt="TESOL Certificate">
+ <img src="tefl.png" alt="TEFL Certificate">
 </section>
 
-<section class="why-choose-section">
-  <h2 class="translatable" data-en="🌟 Why Parents Choose Me" data-zh="🌟 为什么家长选择我" data-ar="🌟 لماذا يختارني الآباء">🌟 Why Parents Choose Me</h2>
-  <div class="why-choose">
-    <div class="why-card">
-      <img src="sun.png" alt="Fun Icon">
-      <h3 class="translatable" data-en="Fun & Interactive Lessons" data-zh="有趣的互动课程" data-ar="دروس ممتعة وتفاعلية">Fun & Interactive Lessons</h3>
-      <p class="translatable" data-en="Kids enjoy learning every session." data-zh="孩子们每节课都乐在其中。" data-ar="يستمتع الأطفال بالتعلم في كل جلسة.">Kids enjoy learning every session.</p>
-    </div>
+<!-- PRICING -->
+<section class="pricing">
+ <h2 class="translatable"
+     data-en="💰 Pricing"
+     data-zh="💰 价格"
+     data-ar="💰 الأسعار">
+     💰 Pricing
+ </h2>
 
-    <div class="why-card">
-      <img src="abc.png" alt="Certification Icon">
-      <h3 class="translatable" data-en="TESOL & TEFL Certified" data-zh="TESOL & TEFL 认证" data-ar="حاصل على شهادات TESOL وTEFL">TESOL & TEFL Certified</h3>
-      <p class="translatable" data-en="Professionally trained and experienced." data-zh="专业培训，经验丰富。" data-ar="مدربة محترفة وذات خبرة.">Professionally trained and experienced.</p>
-    </div>
-
-    <div class="why-card">
-      <img src="123.png" alt="Confidence Icon">
-      <h3 class="translatable" data-en="Confidence & Pronunciation Focus" data-zh="注重自信与发音" data-ar="التركيز على الثقة والنطق">Confidence & Pronunciation Focus</h3>
-      <p class="translatable" data-en="Building strong English skills." data-zh="建立扎实的英语能力。" data-ar="بناء مهارات قوية في اللغة الإنجليزية.">Building strong English skills.</p>
-    </div>
-  </div>
+ <div class="price-box">
+  <h3>25-Minute Class</h3>
+  <p>₱100 (≈ AED 0.72 | QAR 0.70 | BHD 0.027 | OMR 0.026)</p>
+  <p style="color:green; font-weight:700;">✔ Discounted for Middle East Students</p>
+ </div>
 </section>
 
-<section id="pricing">
-  <h2 class="translatable" data-en="💰 Pricing & Plans" data-zh="💰 价格与套餐" data-ar="💰 الأسعار والخطط">💰 Pricing & Plans</h2>
-  <div class="pricing">
+<!-- CONTACT -->
+<section class="contact">
+ <h2 class="translatable"
+     data-en="📩 Get in Touch"
+     data-zh="📩 联系我"
+     data-ar="📩 تواصل معي">
+     📩 Get in Touch
+ </h2>
 
-    <div class="pricing-card">
-      <h3>🎉 Trial — 25 min</h3>
-      <p>₱ 100<br>
-      ≈ ¥13 CNY<br>
-      ≈ AED 0.72<br>
-      ≈ KWD 0.009<br>
-      ≈ QAR 0.70<br>
-      ≈ BHD 0.027<br>
-      ≈ OMR 0.026
-      </p>
-      <p class="discount translatable" data-en="Discounted ✔️" data-zh="已优惠 ✔️" data-ar="مخفض ✔️">Discounted ✔️</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn translatable">📝 Book Now</a>
-    </div>
-
-    <div class="pricing-card">
-      <h3>✨ Regular — 25 min</h3>
-      <p>₱ 200<br>
-      ≈ ¥25 CNY<br>
-      ≈ AED 1.44<br>
-      ≈ KWD 0.018<br>
-      ≈ QAR 1.40<br>
-      ≈ BHD 0.054<br>
-      ≈ OMR 0.052
-      </p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn translatable">📝 Book Now</a>
-    </div>
-
-    <div class="pricing-card">
-      <h3>🌟 Bundle — 12 lessons (5% off)</h3>
-      <p>₱ 2,280<br>
-      ≈ ¥114 CNY<br>
-      ≈ AED 16.4<br>
-      ≈ KWD 0.28<br>
-      ≈ QAR 16.0<br>
-      ≈ BHD 0.61<br>
-      ≈ OMR 0.60
-      </p>
-      <p class="discount translatable">Discounted ✔️</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn translatable">📝 Book Now</a>
-    </div>
-
-  </div>
-</section>
-
-<section id="schedule">
-  <h2 class="translatable" data-en="📅 Weekly Schedule" data-zh="📅 每周课程表" data-ar="📅 الجدول الأسبوعي">📅 Weekly Schedule</h2>
-  <div class="schedule-box">
-    <img src="schedule.png" alt="Weekly Schedule">
-  </div>
-</section>
-
-<section id="payment">
-  <h2 class="translatable" data-en="💳 Payment Methods" data-zh="💳 支付方式" data-ar="💳 طرق الدفع">💳 Payment Methods</h2>
-  <p class="translatable" data-en="Your payments are safe and secure. After booking, you’ll receive your lesson link via VOOV (for Chinese students) or Zoom (for Middle East students). ✅" data-zh="您的付款安全可靠。预订后，您将通过VOOV（针对中国学生）或Zoom（针对中东学生）收到课程链接。✅" data-ar="مدفوعاتك آمنة ومضمونة. بعد الحجز، ستتلقى رابط الدرس عبر VOOV (للطلاب الصينيين) أو Zoom (للطلاب في الشرق الأوسط). ✅">Your payments are safe and secure.</p>
-
-  <ul>
-    <li>💳 ALIPAY 09218502868 TEACHER MARIA</li>
-    <li>💳 WISE APP 09218502868 Maria Arliza Key Cruz</li>
-    <li>💳 PAYPAL 09218502868 Maria Arliza Key Cruz</li>
-  </ul>
-
-  <img src="qr.png" alt="WhatsApp QR Code" class="qr-code">
-</section>
-
-<section id="contact">
-  <h2 class="translatable" data-en="📬 Get in Touch" data-zh="📬 联系我" data-ar="📬 تواصل معي">📬 Get in Touch</h2>
-  <p><strong>cruzmariaarlizakey08@gmail.com</strong></p>
+ <p>Email: <a href="mailto:cruzmariaarlizakey08@gmail.com">cruzmariaarlizakey08@gmail.com</a></p>
+ <p>🌐 Website: <a href="#">YourWebsiteLink.com</a></p>
 </section>
 
 <footer>
-  &copy; 2025 Teacher Maria. All Rights Reserved. 💖
+ <p>© 2025 Teacher Maria — Online English Teacher</p>
 </footer>
 
 <script>
-let currentLang = 'en';
-function toggleLanguage() {
-  const langs = ['en','zh','ar'];
-  let index = langs.indexOf(currentLang);
-  currentLang = langs[(index+1)%langs.length];
-  document.querySelectorAll('.translatable').forEach(el=>{
-    el.innerText = el.getAttribute('data-'+currentLang);
-  });
+function setLanguage(lang) {
+ document.querySelectorAll('.translatable').forEach(el => {
+   el.innerText = el.getAttribute('data-' + lang);
+ });
 }
 </script>
 
