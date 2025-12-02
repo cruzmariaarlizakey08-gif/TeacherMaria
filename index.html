@@ -43,6 +43,17 @@ footer { text-align: center; padding: 20px; background-color: #ffb6c1; color: wh
 @keyframes fly { 0% { left: -150px; top: 10px; } 50% { left: 50%; top: 30px; } 100% { left: 110%; top: 0px; } }
 @media (max-width: 600px) { header { padding: 30px 10px; } .about img { max-width: 150px; } .about p { padding:15px; } .achievements img { max-width: 90%; } .qr-code { max-width: 150px; } .why-card img { max-width: 50px; } .why-card { min-height: auto; max-width: 100%; } }
 .lang-toggle { position: fixed; top: 20px; right: 20px; background: #ff69b4; color: white; border: none; padding: 10px 15px; border-radius: 10px; cursor: pointer; z-index: 1000; }
+
+/* ✅ Remove bullets from payment methods */
+#payment ul {
+    list-style-type: none !important;
+    padding-left: 0 !important;
+    margin: 0 !important;
+    text-align: left; /* optional: align text nicely */
+}
+#payment li {
+    margin-bottom: 10px; /* optional spacing between items */
+}
 </style>
 </head>
 <body>
@@ -134,14 +145,13 @@ footer { text-align: center; padding: 20px; background-color: #ffb6c1; color: wh
 <section id="payment">
   <h2>💳 Payment Methods</h2>
   <p>Your payments are safe and secure. After booking, you’ll receive your lesson link via VOOV (for Chinese students) or Zoom (for Middle East students). ✅</p>
-  <ul style="list-style: none; padding-left: 0; margin: 0;">
+  <ul>
     <li>💳 ALIPAY 09218502868 TEACHER MARIA</li>
     <li>💳 WISE APP 09218502868 Maria Arliza Key Cruz</li>
     <li>💳 PAYPAL 09218502868 Maria Arliza Key Cruz</li>
   </ul>
   <img src="qr.png" alt="WhatsApp QR Code" class="qr-code">
 </section>
-
 
 <!-- Contact -->
 <section id="contact">
