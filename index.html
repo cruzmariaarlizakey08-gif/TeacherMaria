@@ -49,21 +49,22 @@ footer { text-align: center; padding: 20px; background-color: #ffb6c1; color: wh
     list-style-type: none !important;
     padding-left: 0 !important;
     margin: 0 !important;
-    text-align: left; /* optional: align text nicely */
+    text-align: left; 
 }
-#payment li {
-    margin-bottom: 10px; /* optional spacing between items */
-}
+#payment li { margin-bottom: 10px; }
 </style>
 </head>
 <body>
 
+<!-- Language Toggle -->
+<button class="lang-toggle" onclick="toggleLanguage()">🌐 Language</button>
+
 <header>
   <img src="airplane.png" class="airplane">
-  <h1>🎈 Learn English the Fun Way with Teacher Maria! 🎈</h1>
-  <p>Interactive online lessons for kids 🧒. Start your English adventure today! 🚀</p>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn">🎁 Book Trial Class</a>
-  <a href="#" id="regularBtn" class="btn">💖 Subscribe Now</a>
+  <h1 class="translatable" data-en="🎈 Learn English the Fun Way with Teacher Maria! 🎈" data-zh="🎈 与玛丽亚老师一起快乐学英语！🎈" data-ar="🎈 تعلم الإنجليزية بطريقة ممتعة مع المعلمة ماريا! 🎈">🎈 Learn English the Fun Way with Teacher Maria! 🎈</h1>
+  <p class="translatable" data-en="Interactive online lessons for kids 🧒. Start your English adventure today! 🚀" data-zh="为孩子提供互动在线课程 🧒。立即开始英语冒险吧！🚀" data-ar="دروس تفاعلية عبر الإنترنت للأطفال 🧒. ابدأ مغامرة تعلم الإنجليزية اليوم! 🚀">Interactive online lessons for kids 🧒. Start your English adventure today! 🚀</p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn translatable" data-en="🎁 Book Trial Class" data-zh="🎁 预约试课" data-ar="🎁 احجز درس تجريبي">🎁 Book Trial Class</a>
+  <a href="#" id="regularBtn" class="btn translatable" data-en="💖 Subscribe Now" data-zh="💖 立即订阅" data-ar="💖 اشترك الآن">💖 Subscribe Now</a>
 </header>
 
 <!-- Floating Images -->
@@ -76,66 +77,94 @@ footer { text-align: center; padding: 20px; background-color: #ffb6c1; color: wh
 
 <!-- About Me -->
 <section class="about">
-  <h2>👋 Meet Teacher Maria</h2>
+  <h2 class="translatable" data-en="👋 Meet Teacher Maria" data-zh="👋 认识玛丽亚老师" data-ar="👋 تعرف على المعلمة ماريا">👋 Meet Teacher Maria</h2>
   <img src="Teacher-Maria.jpeg" alt="Teacher Maria">
-  <p>Hi! I’m Teacher Maria from the Philippines, a friendly online English teacher with 1 year of experience teaching young learners. I’m TESOL and TEFL certified and hold a Bachelor’s degree in Criminology. I create fun, interactive lessons that help kids build confidence, improve pronunciation, and enjoy learning English. All classes are held online using the VOOV Meeting app for Chinese students and Zoom for Middle East students, with engaging activities and visual materials to support your child’s growth. 🌟💛</p>
+  <p class="translatable" data-en="Hi! I’m Teacher Maria from the Philippines, a friendly online English teacher with 1 year of experience teaching young learners. I’m TESOL and TEFL certified and hold a Bachelor’s degree in Criminology. I create fun, interactive lessons that help kids build confidence, improve pronunciation, and enjoy learning English. All classes are held online using the VOOV Meeting app for Chinese students and Zoom for Middle East students, with engaging activities and visual materials to support your child’s growth. 🌟💛" 
+  data-zh="大家好！我是来自菲律宾的玛丽亚老师，一位有1年幼儿在线英语教学经验的友好老师。我拥有TESOL和TEFL认证以及犯罪学学士学位。我设计有趣的互动课程，帮助孩子建立信心、改善发音并享受学习英语。所有课程为在线课程，针对中国学生使用VOOV会议应用，针对中东学生使用Zoom，配有丰富的互动活动和视觉教材支持孩子成长。🌟💛" 
+  data-ar="مرحبًا! أنا المعلمة ماريا من الفلبين، معلمة لغة إنجليزية ودودة عبر الإنترنت ولدي سنة خبرة في تعليم الأطفال الصغار. أنا حاصلة على شهادات TESOL وTEFL وأحمل درجة البكالوريوس في علم الإجرام. أقوم بإنشاء دروس ممتعة وتفاعلية تساعد الأطفال على بناء الثقة، وتحسين النطق، والاستمتاع بتعلم اللغة الإنجليزية. تُعقد جميع الدروس عبر الإنترنت باستخدام تطبيق VOOV للطلاب الصينيين وZoom للطلاب في الشرق الأوسط، مع أنشطة تفاعلية ومواد بصرية لدعم نمو طفلك. 🌟💛">Hi! I’m Teacher Maria from the Philippines, a friendly online English teacher with 1 year of experience teaching young learners. I’m TESOL and TEFL certified and hold a Bachelor’s degree in Criminology. I create fun, interactive lessons that help kids build confidence, improve pronunciation, and enjoy learning English. All classes are held online using the VOOV Meeting app for Chinese students and Zoom for Middle East students, with engaging activities and visual materials to support your child’s growth. 🌟💛</p>
 </section>
 
 <!-- Achievements -->
 <section class="achievements">
-  <h2>🏆 My Achievements</h2>
+  <h2 class="translatable" data-en="🏆 My Achievements" data-zh="🏆 我的成就" data-ar="🏆 إنجازاتي">🏆 My Achievements</h2>
   <img src="achievement.png" alt="Achievements">
 </section>
 
 <!-- Why Parents Choose Me -->
 <section class="why-choose-section">
-  <h2>🌟 Why Parents Choose Me</h2>
+  <h2 class="translatable" data-en="🌟 Why Parents Choose Me" data-zh="🌟 为什么家长选择我" data-ar="🌟 لماذا يختارني الآباء">🌟 Why Parents Choose Me</h2>
   <div class="why-choose">
     <div class="why-card">
       <img src="sun.png" alt="Fun Icon">
-      <h3>Fun & Interactive Lessons</h3>
-      <p>Kids enjoy learning every session.</p>
+      <h3 class="translatable" data-en="Fun & Interactive Lessons" data-zh="有趣的互动课程" data-ar="دروس ممتعة وتفاعلية">Fun & Interactive Lessons</h3>
+      <p class="translatable" data-en="Kids enjoy learning every session." data-zh="孩子们每节课都乐在其中。" data-ar="يستمتع الأطفال بالتعلم في كل جلسة.">Kids enjoy learning every session.</p>
     </div>
     <div class="why-card">
       <img src="abc.png" alt="Certification Icon">
-      <h3>TESOL & TEFL Certified</h3>
-      <p>Professionally trained and experienced.</p>
+      <h3 class="translatable" data-en="TESOL & TEFL Certified" data-zh="TESOL & TEFL 认证" data-ar="حاصل على شهادات TESOL وTEFL">TESOL & TEFL Certified</h3>
+      <p class="translatable" data-en="Professionally trained and experienced." data-zh="专业培训，经验丰富。" data-ar="مدربة محترفة وذات خبرة.">Professionally trained and experienced.</p>
     </div>
     <div class="why-card">
       <img src="123.png" alt="Confidence Icon">
-      <h3>Confidence & Pronunciation Focus</h3>
-      <p>Building strong English skills.</p>
+      <h3 class="translatable" data-en="Confidence & Pronunciation Focus" data-zh="注重自信与发音" data-ar="التركيز على الثقة والنطق">Confidence & Pronunciation Focus</h3>
+      <p class="translatable" data-en="Building strong English skills." data-zh="建立扎实的英语能力。" data-ar="بناء مهارات قوية في اللغة الإنجليزية.">Building strong English skills.</p>
     </div>
   </div>
 </section>
 
 <!-- Pricing -->
 <section id="pricing">
-  <h2>💰 Pricing & Plans</h2>
+  <h2 class="translatable" data-en="💰 Pricing & Plans" data-zh="💰 价格与套餐" data-ar="💰 الأسعار والخطط">💰 Pricing & Plans</h2>
   <div class="pricing">
+    <!-- Trial -->
     <div class="pricing-card">
       <h3>🎉 Trial — 25 min</h3>
-      <p>₱ 200<br>≈ AED 12.5<br>≈ SAR 12.8<br>≈ ¥ 24</p>
-      <p class="discount">Discounted ✔️</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn">📝 Book Now</a>
+      <p>₱ 100<br>
+      ≈ ¥13 CNY<br>
+      ≈ AED 0.72<br>
+      ≈ KWD 0.009<br>
+      ≈ QAR 0.70<br>
+      ≈ BHD 0.027<br>
+      ≈ OMR 0.026
+      </p>
+      <p class="discount translatable" data-en="Discounted ✔️" data-zh="已优惠 ✔️" data-ar="مخفض ✔️">Discounted ✔️</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn translatable" data-en="📝 Book Now" data-zh="📝 立即预订" data-ar="📝 احجز الآن">📝 Book Now</a>
     </div>
+
+    <!-- Regular -->
     <div class="pricing-card">
       <h3>✨ Regular — 25 min</h3>
-      <p>₱ 240<br>≈ AED 15.0<br>≈ SAR 15.3<br>≈ ¥ 29</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn">📝 Book Now</a>
+      <p>₱ 200<br>
+      ≈ ¥25 CNY<br>
+      ≈ AED 1.44<br>
+      ≈ KWD 0.018<br>
+      ≈ QAR 1.40<br>
+      ≈ BHD 0.054<br>
+      ≈ OMR 0.052
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn translatable" data-en="📝 Book Now" data-zh="📝 立即预订" data-ar="📝 احجز الآن">📝 Book Now</a>
     </div>
+
+    <!-- Bundle -->
     <div class="pricing-card">
       <h3>🌟 Bundle — 12 lessons with 5% discount</h3>
-      <p>₱ 2,736 (5% off 2,880)<br>~ AED 171<br>~ SAR 175<br>~ ¥ 329</p>
-      <p class="discount">Discounted ✔️</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn">📝 Book Now</a>
+      <p>₱ 2,280<br>
+      ≈ ¥114 CNY<br>
+      ≈ AED 16.4<br>
+      ≈ KWD 0.28<br>
+      ≈ QAR 16.0<br>
+      ≈ BHD 0.61<br>
+      ≈ OMR 0.60
+      </p>
+      <p class="discount translatable" data-en="Discounted ✔️" data-zh="已优惠 ✔️" data-ar="مخفض ✔️">Discounted ✔️</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn translatable" data-en="📝 Book Now" data-zh="📝 立即预订" data-ar="📝 احجز الآن">📝 Book Now</a>
     </div>
   </div>
 </section>
 
 <!-- Schedule -->
 <section id="schedule">
-  <h2>📅 Weekly Schedule</h2>
+  <h2 class="translatable" data-en="📅 Weekly Schedule" data-zh="📅 每周课程表" data-ar="📅 الجدول الأسبوعي">📅 Weekly Schedule</h2>
   <div class="schedule-box">
     <img src="schedule.png" alt="Weekly Schedule">
   </div>
@@ -143,8 +172,10 @@ footer { text-align: center; padding: 20px; background-color: #ffb6c1; color: wh
 
 <!-- Payment -->
 <section id="payment">
-  <h2>💳 Payment Methods</h2>
-  <p>Your payments are safe and secure. After booking, you’ll receive your lesson link via VOOV (for Chinese students) or Zoom (for Middle East students). ✅</p>
+  <h2 class="translatable" data-en="💳 Payment Methods" data-zh="💳 支付方式" data-ar="💳 طرق الدفع">💳 Payment Methods</h2>
+  <p class="translatable" data-en="Your payments are safe and secure. After booking, you’ll receive your lesson link via VOOV (for Chinese students) or Zoom (for Middle East students). ✅" 
+  data-zh="您的付款安全可靠。预订后，您将通过VOOV（针对中国学生）或Zoom（针对中东学生）收到课程链接。✅" 
+  data-ar="مدفوعاتك آمنة ومضمونة. بعد الحجز، ستتلقى رابط الدرس عبر VOOV (للطلاب الصينيين) أو Zoom (للطلاب في الشرق الأوسط). ✅">Your payments are safe and secure. After booking, you’ll receive your lesson link via VOOV (for Chinese students) or Zoom (for Middle East students). ✅</p>
   <ul>
     <li>💳 ALIPAY 09218502868 TEACHER MARIA</li>
     <li>💳 WISE APP 09218502868 Maria Arliza Key Cruz</li>
@@ -155,13 +186,25 @@ footer { text-align: center; padding: 20px; background-color: #ffb6c1; color: wh
 
 <!-- Contact -->
 <section id="contact">
-  <h2>📬 Get in Touch</h2>
+  <h2 class="translatable" data-en="📬 Get in Touch" data-zh="📬 联系我" data-ar="📬 تواصل معي">📬 Get in Touch</h2>
   <p><strong>cruzmariaarlizakey08@gmail.com</strong></p>
 </section>
 
 <footer>
   &copy; 2025 Teacher Maria. All Rights Reserved. 💖
 </footer>
+
+<script>
+let currentLang = 'en';
+function toggleLanguage() {
+  const langs = ['en','zh','ar'];
+  let index = langs.indexOf(currentLang);
+  currentLang = langs[(index+1)%langs.length];
+  document.querySelectorAll('.translatable').forEach(el=>{
+    el.innerText = el.getAttribute('data-'+currentLang);
+  });
+}
+</script>
 
 </body>
 </html>
