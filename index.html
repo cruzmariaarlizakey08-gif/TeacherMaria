@@ -41,6 +41,7 @@
   @media (max-width: 600px) {
     header { padding: 30px 10px; }
     .about img { max-width: 150px; }
+    .why-grid { flex-direction: column; align-items: center; }
   }
 
   .lang-toggle {
@@ -56,24 +57,22 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin-top: 30px;
   }
 
   .why-card {
     background: white;
     padding: 20px;
-    width: 250px;
+    width: 220px;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: transform .2s;
   }
   .why-card:hover { transform: translateY(-5px); }
-  .why-card img {
-    width: 70px; margin-bottom: 10px;
-  }
-  .why-card p {
-    font-size: 18px; font-weight: 600; color: #333;
-  }
+  .why-card img { width: 70px; margin-bottom: 10px; }
+  .why-card p { font-size: 18px; font-weight: 600; color: #333; }
+
 </style>
 </head>
 <body>
@@ -83,7 +82,7 @@
 <header>
   <img src="airplane.png" class="airplane">
   <h1 data-en="🎈 Learn English the Fun Way with Teacher Maria! 🎈" data-zh="🎈 和 Teacher Maria 一起快樂學英語！🎈">🎈 Learn English the Fun Way with Teacher Maria! 🎈</h1>
-  <p data-en="Interactive online lessons for kids 🧒. Start your English adventure today! 🚀" data-zh="互動線上課程，讓孩子快樂學習英語！🚀">Interactive online lessons for kids 🧒. Start your English adventure today! 🚀</p>
+  <p data-en="Interactive online lessons for kids 🧒. Start your English adventure today! 🚀" data-zh="互動線上課程，讓孩子快樂學英語！🚀">Interactive online lessons for kids 🧒. Start your English adventure today! 🚀</p>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn" data-en="🎁 Book Trial Class" data-zh="🎁 預約體驗課">🎁 Book Trial Class</a>
   <a href="#" id="regularBtn" class="btn" data-en="💖 Subscribe Now" data-zh="💖 訂閱課程">💖 Subscribe Now</a>
 </header>
@@ -104,35 +103,28 @@
   <p>All classes are held online through the VOOV App, where I use digital tools, visual aids, and interactive materials to make learning English enjoyable and effective. Whether your child is just beginning or wants to improve speaking skills, I’m here to support their growth every step of the way. 💛</p>
 </section>
 
-<!-- ⭐ INSERTED SECTION: WHY PARENTS CHOOSE MY CLASSES -->
+<!-- ⭐ Why Parents Choose My Classes Section -->
 <section id="why">
   <h2 style="text-align:center; font-size:28px; margin-bottom:20px;">🌟 Why Parents Choose My Classes 🌟</h2>
-
   <div class="why-grid">
-
     <div class="why-card">
       <img src="cloud.png" alt="Safe Payments">
       <p>Safe & Secure Payments</p>
     </div>
-
     <div class="why-card">
       <img src="sun.png" alt="Beginner Friendly">
       <p>Beginner-Friendly Classes</p>
     </div>
-
     <div class="why-card">
       <img src="abc.png" alt="Fun Materials">
       <p>Fun Learning Materials Included</p>
     </div>
-
     <div class="why-card">
       <img src="123.png" alt="Professional Teacher">
       <p>Professional Teacher with International Students</p>
     </div>
-
   </div>
 </section>
-<!-- END OF INSERTED SECTION -->
 
 <section id="pricing">
   <h2 data-en="💰 Pricing & Plans" data-zh="💰 價格方案">💰 Pricing & Plans</h2>
@@ -186,22 +178,12 @@
 </footer>
 
 <script>
-const phpPrice = 240;
-const exchangeRate = 0.125;
-
-function updatePrice() {
-  const cny = (phpPrice * exchangeRate).toFixed(0);
-  document.getElementById('regularBtn').innerText = `💖 Subscribe Now – ${phpPrice} PHP (~${cny} ¥)`;
-}
-
 function toggleLang() {
   const elements = document.querySelectorAll('[data-en]');
   elements.forEach(el => {
     el.innerText = (el.innerText === el.dataset.en) ? el.dataset.zh : el.dataset.en;
   });
 }
-
-updatePrice();
 </script>
 
 </body>
