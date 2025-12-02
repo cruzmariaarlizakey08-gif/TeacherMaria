@@ -39,8 +39,24 @@ footer { text-align: center; padding: 20px; background-color: #ffb6c1; color: wh
 .img2 { top: 330px; }
 .img3 { top: 520px; }
 @keyframes float { 0% { transform: translate(0,0); } 25% { transform: translate(10px,-10px); } 50% { transform: translate(-10px,10px); } 75% { transform: translate(10px,10px); } 100% { transform: translate(0,0); } }
-@media (max-width: 600px) { header { padding: 30px 10px; } .about img { max-width: 150px; } .about p { padding:15px; } .achievements img { max-width: 90%; } .qr-code { max-width: 150px; } .why-card img { max-width: 50px; } .why-card { min-height: auto; max-width: 100%; } }
-.lang-toggle { position: fixed; top: 20px; right: 20px; background: #ff69b4; color: white; border: none; padding: 10px 15px; border-radius: 10px; cursor: pointer; z-index: 1000; }
+
+@media (max-width: 600px) {
+  header { padding: 30px 10px; }
+  .about img { max-width: 150px; }
+  .about p { padding:15px; }
+  .achievements img { max-width: 90%; }
+  .qr-code { max-width: 150px; }
+  .why-card img { max-width: 50px; }
+  .why-card { min-height: auto; max-width: 100%; }
+}
+
+.lang-toggle {
+  position: fixed; top: 20px; right: 20px;
+  background: #ff69b4; color: white; border: none;
+  padding: 10px 15px; border-radius: 10px;
+  cursor: pointer; z-index: 1000;
+}
+
 #payment ul { list-style-type: none !important; padding-left: 0 !important; margin: 0 !important; text-align: left; }
 #payment li { margin-bottom: 10px; }
 </style>
@@ -64,6 +80,7 @@ footer { text-align: center; padding: 20px; background-color: #ffb6c1; color: wh
 <img src="books.png" class="side-img right img2">
 <img src="pencil.png" class="side-img right img3">
 
+<!-- About Me -->
 <section class="about">
   <h2 class="translatable" data-en="👋 Meet Teacher Maria" data-zh="👋 认识玛丽亚老师" data-ar="👋 تعرف على المعلمة ماريا">👋 Meet Teacher Maria</h2>
   <img src="Teacher-Maria.jpeg" alt="Teacher Maria">
@@ -75,11 +92,13 @@ footer { text-align: center; padding: 20px; background-color: #ffb6c1; color: wh
   </p>
 </section>
 
+<!-- Achievements -->
 <section class="achievements">
   <h2 class="translatable" data-en="🏆 My Achievements" data-zh="🏆 我的成就" data-ar="🏆 إنجازاتي">🏆 My Achievements</h2>
   <img src="achievement.png" alt="Achievements">
 </section>
 
+<!-- Why Parents Choose Me -->
 <section class="why-choose-section">
   <h2 class="translatable" data-en="🌟 Why Parents Choose Me" data-zh="🌟 为什么家长选择我" data-ar="🌟 لماذا يختارني الآباء">🌟 Why Parents Choose Me</h2>
   <div class="why-choose">
@@ -88,13 +107,11 @@ footer { text-align: center; padding: 20px; background-color: #ffb6c1; color: wh
       <h3 class="translatable" data-en="Fun & Interactive Lessons" data-zh="有趣的互动课程" data-ar="دروس ممتعة وتفاعلية">Fun & Interactive Lessons</h3>
       <p class="translatable" data-en="Kids enjoy learning every session." data-zh="孩子们每节课都乐在其中。" data-ar="يستمتع الأطفال بالتعلم في كل جلسة.">Kids enjoy learning every session.</p>
     </div>
-
     <div class="why-card">
       <img src="abc.png" alt="Certification Icon">
       <h3 class="translatable" data-en="TESOL & TEFL Certified" data-zh="TESOL & TEFL 认证" data-ar="حاصل على شهادات TESOL وTEFL">TESOL & TEFL Certified</h3>
       <p class="translatable" data-en="Professionally trained and experienced." data-zh="专业培训，经验丰富。" data-ar="مدربة محترفة وذات خبرة.">Professionally trained and experienced.</p>
     </div>
-
     <div class="why-card">
       <img src="123.png" alt="Confidence Icon">
       <h3 class="translatable" data-en="Confidence & Pronunciation Focus" data-zh="注重自信与发音" data-ar="التركيز على الثقة والنطق">Confidence & Pronunciation Focus</h3>
@@ -103,62 +120,62 @@ footer { text-align: center; padding: 20px; background-color: #ffb6c1; color: wh
   </div>
 </section>
 
+<!-- Pricing -->
 <section id="pricing">
   <h2 class="translatable" data-en="💰 Pricing & Plans" data-zh="💰 价格与套餐" data-ar="💰 الأسعار والخطط">💰 Pricing & Plans</h2>
   <div class="pricing">
 
     <div class="pricing-card">
-      <h3 class="translatable" data-en="🎉 Trial — 25 min" data-zh="🎉 试课 — 25 分钟" data-ar="🎉 تجربة — 25 دقيقة">🎉 Trial — 25 min</h3>
-      <p class="translatable"
-      data-en="₱ 100 ≈ ¥13 CNY ≈ AED 6.9 ≈ KWD 0.007 ≈ QAR 6.9 ≈ BHD 0.026 ≈ OMR 0.025"
-      data-zh="₱ 100 ≈ ¥13 人民币 ≈ AED 6.9 迪拉姆 ≈ KWD 0.007 第纳尔 ≈ QAR 6.9 里亚尔 ≈ BHD 0.026 第纳尔 ≈ OMR 0.025 ريال"
-      data-ar="₱ 100 ≈ ¥13 ¥ صيني ≈ AED 6.9 درهم ≈ KWD 0.007 دينار ≈ QAR 6.9 ريال ≈ BHD 0.026 دينار ≈ OMR 0.025 ريال">₱ 100 ≈ ¥13 CNY ≈ AED 6.9 ≈ KWD 0.007 ≈ QAR 6.9 ≈ BHD 0.026 ≈ OMR 0.025</p>
+      <h3>🎉 Trial — 25 min</h3>
+      <p>₱ 100</p>
+      <p>≈ ¥13 CNY<br>≈ AED 6.9<br>≈ KWD 0.007<br>≈ QAR 6.9<br>≈ BHD 0.026<br>≈ OMR 0.025</p>
       <p class="discount translatable" data-en="Discounted ✔️" data-zh="已优惠 ✔️" data-ar="مخفض ✔️">Discounted ✔️</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn translatable" data-en="📝 Book Now" data-zh="📝 立即预约" data-ar="📝 احجز الآن">📝 Book Now</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn translatable">📝 Book Now</a>
     </div>
 
     <div class="pricing-card">
-      <h3 class="translatable" data-en="✨ Regular — 25 min" data-zh="✨ 常规 — 25 分钟" data-ar="✨ عادي — 25 دقيقة">✨ Regular — 25 min</h3>
-      <p class="translatable"
-      data-en="₱ 200 ≈ ¥26 CNY ≈ AED 13.8 ≈ KWD 0.018 ≈ QAR 14 ≈ BHD 0.054 ≈ OMR 0.052"
-      data-zh="₱ 200 ≈ ¥26 人民币 ≈ AED 13.8 迪拉姆 ≈ KWD 0.018 第纳尔 ≈ QAR 14 里亚尔 ≈ BHD 0.054 第纳尔 ≈ OMR 0.052 ريال"
-      data-ar="₱ 200 ≈ ¥26 ¥ صيني ≈ AED 13.8 درهم ≈ KWD 0.018 دينار ≈ QAR 14 ريال ≈ BHD 0.054 دينار ≈ OMR 0.052 ريال">₱ 200 ≈ ¥26 CNY ≈ AED 13.8 ≈ KWD 0.018 ≈ QAR 14 ≈ BHD 0.054 ≈ OMR 0.052</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn translatable" data-en="📝 Book Now" data-zh="📝 立即预约" data-ar="📝 احجز الآن">📝 Book Now</a>
+      <h3>✨ Regular — 25 min</h3>
+      <p>₱ 200</p>
+      <p>≈ ¥26 CNY<br>≈ AED 13.8<br>≈ KWD 0.018<br>≈ QAR 14<br>≈ BHD 0.054<br>≈ OMR 0.052</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn translatable">📝 Book Now</a>
     </div>
 
     <div class="pricing-card">
-      <h3 class="translatable" data-en="🌟 Bundle — 12 lessons (5% off)" data-zh="🌟 套餐 — 12 节课 (5% 优惠)" data-ar="🌟 الباقة — 12 درس (خصم 5%)">🌟 Bundle — 12 lessons (5% off)</h3>
-      <p class="translatable"
-      data-en="₱ 2,736 ≈ ¥353 CNY ≈ AED 189 ≈ KWD 18.2 ≈ QAR 191 ≈ BHD 7.2 ≈ OMR 7.0"
-      data-zh="₱ 2,736 ≈ ¥353 人民币 ≈ AED 189 迪拉姆 ≈ KWD 18.2 第纳尔 ≈ QAR 191 里亚尔 ≈ BHD 7.2 第纳尔 ≈ OMR 7.0 ريال"
-      data-ar="₱ 2,736 ≈ ¥353 ¥ صيني ≈ AED 189 درهم ≈ KWD 18.2 دينار ≈ QAR 191 ريال ≈ BHD 7.2 دينار ≈ OMR 7.0 ريال">₱ 2,736 ≈ ¥353 CNY ≈ AED 189 ≈ KWD 18.2 ≈ QAR 191 ≈ BHD 7.2 ≈ OMR 7.0</p>
+      <h3>🌟 Bundle — 12 lessons (5% off)</h3>
+      <p>₱ 2,400</p>
+      <p>≈ ¥312 CNY<br>≈ AED 165<br>≈ KWD 2.16<br>≈ QAR 168<br>≈ BHD 6.48<br>≈ OMR 6.24</p>
       <p class="discount translatable" data-en="Discounted ✔️" data-zh="已优惠 ✔️" data-ar="مخفض ✔️">Discounted ✔️</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn translatable" data-en="📝 Book Now" data-zh="📝 立即预约" data-ar="📝 احجز الآن">📝 Book Now</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGsgwdczxGy2flT6MPbOJX1g9SHFliKtOqvOWVGJlynW6xQ/viewform?usp=sharing" target="_blank" class="btn translatable">📝 Book Now</a>
     </div>
 
   </div>
 </section>
 
+<!-- Schedule -->
 <section id="schedule">
-  <h2 class="translatable" data-en="📅 Weekly Schedule" data-zh="📅 每周课程安排" data-ar="📅 جدول الأسبوعي">📅 Weekly Schedule</h2>
+  <h2 class="translatable" data-en="📅 Weekly Schedule" data-zh="📅 每周课程表" data-ar="📅 الجدول الأسبوعي">📅 Weekly Schedule</h2>
   <div class="schedule-box">
     <img src="schedule.png" alt="Weekly Schedule">
   </div>
 </section>
 
+<!-- Payment -->
 <section id="payment">
   <h2 class="translatable" data-en="💳 Payment Methods" data-zh="💳 支付方式" data-ar="💳 طرق الدفع">💳 Payment Methods</h2>
-  <p class="translatable" data-en="Your payments are safe and secure. After booking, you’ll receive your lesson link via VOOV (for Chinese students) or Zoom (for Middle East students). ✅" data-zh="您的支付安全可靠。预订后，您将通过VOOV（针对中国学生）或Zoom（针对中东学生）收到课程链接。✅" data-ar="مدفوعاتك آمنة ومضمونة. بعد الحجز، ستتلقى رابط الدرس عبر VOOV (للطلاب الصينيين) أو Zoom (للطلاب في الشرق الأوسط). ✅">Your payments are safe and secure...</p>
+  <p class="translatable" data-en="Your payments are safe and secure. After booking, you’ll receive your lesson link via VOOV (for Chinese students) or Zoom (for Middle East students). ✅" data-zh="您的付款安全可靠。预订后，您将通过VOOV（针对中国学生）或Zoom（针对中东学生）收到课程链接。✅" data-ar="مدفوعاتك آمنة ومضمونة. بعد الحجز، ستتلقى رابط الدرس عبر VOOV (للطلاب الصينيين) أو Zoom (للطلاب في الشرق الأوسط). ✅">Your payments are safe and secure.</p>
+
   <ul>
     <li>💳 ALIPAY 09218502868 TEACHER MARIA</li>
     <li>💳 WISE APP 09218502868 Maria Arliza Key Cruz</li>
     <li>💳 PAYPAL 09218502868 Maria Arliza Key Cruz</li>
   </ul>
+
   <img src="qr.png" alt="WhatsApp QR Code" class="qr-code">
 </section>
 
+<!-- Contact -->
 <section id="contact">
-  <h2 class="translatable" data-en="📬 Get in Touch" data-zh="📬 联系我" data-ar="📬 تواصل معنا">📬 Get in Touch</h2>
+  <h2 class="translatable" data-en="📬 Get in Touch" data-zh="📬 联系我" data-ar="📬 تواصل معي">📬 Get in Touch</h2>
   <p><strong>cruzmariaarlizakey08@gmail.com</strong></p>
 </section>
 
@@ -167,13 +184,13 @@ footer { text-align: center; padding: 20px; background-color: #ffb6c1; color: wh
 </footer>
 
 <script>
+let currentLang = 'en';
 function toggleLanguage() {
-  const langs = ['en', 'zh', 'ar'];
-  let current = document.documentElement.getAttribute('lang');
-  let next = langs[(langs.indexOf(current)+1)%langs.length];
-  document.documentElement.setAttribute('lang', next);
-  document.querySelectorAll('.translatable').forEach(el => {
-    el.innerHTML = el.dataset[next];
+  const langs = ['en','zh','ar'];
+  let index = langs.indexOf(currentLang);
+  currentLang = langs[(index+1)%langs.length];
+  document.querySelectorAll('.translatable').forEach(el=>{
+    el.innerText = el.getAttribute('data-'+currentLang);
   });
 }
 </script>
